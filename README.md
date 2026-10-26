@@ -33,4 +33,12 @@ be stored in a database for future use. By building these models, the system is 
 
 This method is vastly used in speaker recognition system, due to its high percent of success, although it is quite cost inefficient, due to the physical storage space needed for storing the database.
 
+## Speaker Verification Process
+Speaker verification is a process of accepting or denying the claimed identity of a speaker. This can be expressed via the question "Is this X that is talking?". In order for these types of systems to perform the verification process is the existence of a database, similar to the one used in the identification process. As we can see in the image below, there are 2 different stages for this process,
+the first one being almost identical to the speaker identification systems.
+
+<p align = "center">
+  <img width="1308" height="586" alt="image" src="https://github.com/user-attachments/assets/def5352a-3c8e-4ca2-bfbb-a8cf7eb1f698" />
+</p>
+
 
