@@ -33,19 +33,19 @@ for f=1:length(files)
 
         %timbre
         %mfccs=mirgetdata(mirmfcc(audio));
-        %AF(k,17)= mfccs(1);
-        %AF(k,18)= mfccs(2);
-        %AF(k,19)= mfccs(3);
-        %AF(k,20)= mfccs(4);
-        %AF(k,21)= mfccs(5);
-        %AF(k,22)=mfccs(6);
-        %AF(k,23)=mfccs(7);
-        %AF(k,24)=mfccs(8);
-        %AF(k,25)=mfccs(9);
-        %AF(k,26)=mfccs(10);
-        %AF(k,27)=mfccs(11);
-        %AF(k,28)=mfccs(12);
-        %AF(k,29)=mfccs(13);      
+        AF(k,17)= mfccs(1);
+        AF(k,18)= mfccs(2);
+        AF(k,19)= mfccs(3);
+        AF(k,20)= mfccs(4);
+        AF(k,21)= mfccs(5);
+        AF(k,22)=mfccs(6);
+        AF(k,23)=mfccs(7);
+        AF(k,24)=mfccs(8);
+        AF(k,25)=mfccs(9);
+        AF(k,26)=mfccs(10);
+        AF(k,27)=mfccs(11);
+        AF(k,28)=mfccs(12);
+        AF(k,29)=mfccs(13);      
         
         k=k+1;
     end
