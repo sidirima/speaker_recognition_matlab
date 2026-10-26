@@ -20,4 +20,17 @@ Speaker recognition is the ability to automatically detect a speaker among other
 
 In our day and age, speaker recognition systems can be found everywhere, from smartphones and tablets to smart vehicle systems. Google's Gemini, Amazon's Alexa and Apple's Siri use speaker recognition systems to identify each user's voice.
 
-##
+## Speaker Identification Process
+Speaker identification is the ability of a system to specify a certain ID to a person based on his speech. This can be achieved by retrieving a certain amount of this person's voice saved data.
+In the image below, there is a step - to - step visualization of this process.
+<p align = "center">
+  <img width="1310" height="446" alt="image" src="https://github.com/user-attachments/assets/63cd6648-7115-4815-b192-f894e7c1037e" />
+</p>
+
+The first part of the process is taking samples from the voices of all speakers, and after digitization of these samples (using ADC), we perform the _feature extraction_ process. For the process to take
+action, the samples need to be _framed_, which means separation of each sample in smaller portions (500mS, 1s or 2s each). This process will end with the creation of **speaker models**, which will then
+be stored in a database for future use. By building these models, the system is being "trained" in order to identify the specific sound patterns for each speaker. During testing procedure, the system performs a **pattern matching**, in order to identify the speaker based on the stored data of his voice.
+
+This method is vastly used in speaker recognition system, due to its high percent of success, although it is quite cost inefficient, due to the physical storage space needed for storing the database.
+
+
