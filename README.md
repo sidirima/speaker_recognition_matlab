@@ -41,4 +41,6 @@ the first one being almost identical to the speaker identification systems.
   <img width="1308" height="586" alt="image" src="https://github.com/user-attachments/assets/def5352a-3c8e-4ca2-bfbb-a8cf7eb1f698" />
 </p>
 
+The difference between an identification and a verification system is on the second stage of the process. When a speaker claims his ID, the system must decide if the claimed ID is real or not. The system performs a comparison between the unknown person's voice and the model stored in the database concerning that claimed ID. Then, a **Score Ratio** is calculated in order to accept or reject the claimed ID. The acceptance or rejection is defined by a _threshold_ that is compared to the score ratio.
 
+With the use of this method, it is statistically impossible for a system to fail in identifying a specific speaker, thus it is mostly used in modern applications.
