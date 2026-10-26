@@ -9,10 +9,14 @@ Then, we organised those extracted features in graphs in order to visualize if a
 
 ## What is Speaker Recognition?
 Speaker recognition is the ability to automatically detect a speaker among others, by using information found in his speech waves. There are four categories in which the spectrum of methods of speech recognition can be divised:
-- Speaker Identification
-- Speaker Verification
-- Speaker Diarization
-- Speaker De-Identification
+- **Speaker Identification**
+- **Speaker Verification**
+- **Speaker Diarization**
+- **Speaker De-Identification**
+
+<p align = "center">
+  <img width="685" height="390" alt="image" src="https://github.com/user-attachments/assets/87cca074-04d7-4a4e-a16c-e6179474f838" />
+</p>
 
 In our day and age, speaker recognition systems can be found everywhere, from smartphones and tablets to smart vehicle systems. Google's Gemini, Amazon's Alexa and Apple's Siri use speaker recognition systems to identify each user's voice.
 
