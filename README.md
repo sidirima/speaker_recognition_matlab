@@ -51,4 +51,5 @@ Speaker diarizataion is a method that is used in multiparticipant environments. 
 <p align = "center">
   <img width="1434" height="153" alt="image" src="https://github.com/user-attachments/assets/0d2c4c25-c949-4016-a484-cec57d9af2e2" />
 </p> 
-The audio input (e.g. a multi-speaker audio file) must be first of all normalized and dereverberated. Then, the system performs _Speech Activity Detection_ to separate the parts of the file that contain speech. This process is performed by the use of a bandpass filter.
+
+The audio input (e.g. a multi-speaker audio file) must be first of all normalized and dereverberated. This is performed in _Front-End Processing_ step. Then, the system performs _Speech Activity Detection_ to separate the parts of the file that contain speech. This process is performed by the use of a bandpass filter.
