@@ -97,3 +97,13 @@ Processing of our files is performed with the use of MATLAB and more specificall
 
 #### Cepstral Characteristics
 - **Mel Frequency Cepstral Coefficients (MFCC)**: a set of numerical features that represent the short-term power spectrum and timbre (tone quality) of an audio signal, designed to mimic how the human ear perceives sound.
+
+### Audio File Fragmentation
+In order to create models for each speaker's voice, in order to train the speaker recognition system, recorded audio files need to be segmented in smaller parts. Each of those parts is equal in length. In order to do a better comparison according to each parameters' usefulness, we chose 3 different segment lengths: 1s, 2s and 5s. On the time based characteristics, smaller segment length means more segments / audio file, thus less waveform fluctuation. Consequence of that is that result graphs are more detailed. On the other hand, on frequency spectrum characteristics, larger fragmentation is suggested for more accurate data.
+
+## Results from experiments
+All data extracted from MIR Toolbox, using [mir_extractor.m](/MATLAB_code/mir_extractor.m) code file were saved in a spreadsheet .xlsx file named [FinalData.xlsx](/MATLAB_code/FinalData.xlsx). Using Microsoft Office Excel, we organised the data according to the parameter studied, and also according to fragment length. Afterwards, we used the data to create graphs and monitor the results of the procedure. 
+We studied each parameter carefully in order to decide if a speaker recognition system will be able to distinguish the 3 different speakers based on these data. The conclusions are summarized in the following table. Useful parameters are represented with green color and non useful with red color. 
+<p align = "center">
+  <img width="366" height="714" alt="image" src="https://github.com/user-attachments/assets/84e1ce8a-8c51-4f2b-8493-347ef658edab" />
+</p>
