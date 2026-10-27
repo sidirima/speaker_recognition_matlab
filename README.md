@@ -58,3 +58,42 @@ Interesting fact about speaker diarization method is that opposing the other two
 
 ## Speaker De-Identification
 Speaker De-Identification is a process used to alter the sound of a speaker's voice in order to retain his anonymity. In order to achieve this, de-identification methods use voice transformation of the input signal. Then, the system uses a "target speaker" and performs the transformation so as the voice of the source speaker sound like its from the target speaker. Reason for using this method is due to European Union's GDPR (General Data Protection Regulation) of 2016. 
+
+## Our Experimental Approach
+As previously mentioned, our research team consisted of 3 male speakers of about the same age. This means that their vocal frequencies are quite the same, therefore it would be quite challenging to distinguish each one's voice. 
+
+### Recording Voice Files
+First of all, we will record some audio files to use as samples of the 3 voices. Those recordings are the following:
+- Each individual speaker's voice when speaking alone
+- 3 speaker duets in pairs (Speaker A & B, Speaker B & C, Speaker A & C)
+- All 3 speakers talking simultaneously
+Each audio file is 5 minutes long, in order for our system to utilize plenty of sample material. All recordings took place in a studio environment, in order for the audio files to be as clean as possible. The files were .WAV (thus uncompressed), in order for all the spectral information of the recording to be used for analysis.
+
+### Processing Voice Files
+Processing of our files is performed with the use of MATLAB and more specifically via the MIR Toolbox, as we mentioned before. Then, we need to select the most useful sound parameters in order to recognize its speaker's different voice. The parameters we select should fulfill the following requirements:
+- Large between-speaker variability and small within-speaker variability
+- Noise and distortion tollerant
+- "Physic" common appearance in speaker's voice
+- Easily measured in sound signal
+- Hard to mimic
+- Unaffected by speaker's health (e.g. due to seasonal hoarseness) or long-term voice changes (e.g. voice-cracks of puberty)
+
+### Audio Parameters Used in the experiment
+
+#### Time Characteristics
+- **RMS Energy**: running average of signal energy, as opposed to peak level, which is the highest instantaneous value.
+- **Zero - Crossing Rate**: rate at which an audio signal changes its algebraic sign (from positive to negative or negative to positive) across the zero-amplitude line.
+- **Shannon Entropy**: mathematical measure of the uncertainty, randomness, or complexity of an audio signal's data distribution.
+
+#### Frequency Characteristics
+- **Rolloff Frequency**: rate at which a signal's level decreases after passing through a filter or the passband frequency.
+- **Spectral Brightness**: audio attribute that describes the balance of low-frequency and high-frequency energy in a sound
+- **Spectral Irregularity**: feature that measures how much the amplitudes of adjacent harmonics (or frequency bands) vary or jump up and down relative to one another.
+- **Spectrum Centroid**: indicates where the "center of mass" of the spectrum of the sound is located. 
+- **Spectral Spread**: measures how the energy of a sound is distributed around its spectrum centroid.
+- **Spectral Skewness**: audio descriptor that measures the symmetry of an audio frequency spectrum around its spectrum centroid.
+- **Spectral Kurtosis**: feature that measures the "peakedness," sharpness, or non-Gaussian distribution of a power spectrum around its spectral centroid.
+- **Spectral Flatness**: audio feature that measures how "noise-like" or "tone-like" a sound is.
+
+#### Cepstral Characteristics
+- **Mel Frequency Cepstral Coefficients (MFCC)**: a set of numerical features that represent the short-term power spectrum and timbre (tone quality) of an audio signal, designed to mimic how the human ear perceives sound.
