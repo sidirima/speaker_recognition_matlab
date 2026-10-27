@@ -38,7 +38,7 @@ Speaker verification is a process of accepting or denying the claimed identity o
 the first one being almost identical to the speaker identification systems.
 
 <p align = "center">
- <img width="796" height="86" alt="image" src="https://github.com/user-attachments/assets/4a5e2489-873e-448a-8575-a72cac439cf3" />
+  <img width="1308" height="586" alt="image" src="https://github.com/user-attachments/assets/1b58363c-7108-441a-b64c-daf62d728fa3" />
 </p>
 
 The difference between an identification and a verification system is on the second stage of the process. When a speaker claims his ID, the system must decide if the claimed ID is real or not. The system performs a comparison between the unknown person's voice and the model stored in the database concerning that claimed ID. Then, a **Score Ratio** is calculated in order to accept or reject the claimed ID. The acceptance or rejection is defined by a _threshold_ that is compared to the score ratio.
@@ -49,6 +49,6 @@ With the use of this method, it is statistically impossible for a system to fail
 Speaker diarizataion is a method that is used in multiparticipant environments. It responds to the question "Who talks when?". The process is being performed in 6 different steps, according to the figure below.
 
 <p align = "center">
-  <img width="1434" height="195" alt="image" src="https://github.com/user-attachments/assets/043e5c20-7ab9-4d67-bb82-5b095b7bd2dc" />
+  <img width="1434" height="153" alt="image" src="https://github.com/user-attachments/assets/0d2c4c25-c949-4016-a484-cec57d9af2e2" />
 </p> 
 The audio input (e.g. a multi-speaker audio file) must be first of all normalized and dereverberated. Then, the system performs _Speech Activity Detection_ to separate the parts of the file that contain speech. This process is performed by the use of a bandpass filter.
